@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Проверка слова</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      #result {
+        margin-top: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <script>
+      // Функция для обработки введенного слова
+      function checkWord(word) {
+        const resultElement = document.getElementById("result");
+        if (word === "пулоты") {
+          resultElement.textContent = "ошибка! заменить на шаверму?";
+        } else {
+          resultElement.textContent = "ну это норм еда";
+        }
+      }
+
+      // Когда страница загрузится, попросим ввести слово
+      window.onload = function () {
+        let input = prompt("Введите названия блюда:");
+        checkWord(input);
+      };
+    </script>
+    <div id="result"></div>
+  </body>
+</html>
