@@ -1,2 +1,2 @@
 # Puloti
-https://baltoavanto.github.io/Puloti/
+https://baltoavanto.github.io/Puloti/puloti.html
